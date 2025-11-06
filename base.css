@@ -161,7 +161,7 @@ html, body {
   
   .selectors {
     grid-area: 2/3/6/7;
-    width: 100%;
+    width: 40%;
     height: 100%;
     display: grid;
     font-size: 25px; 
@@ -169,7 +169,7 @@ html, body {
   
   .about, .skills, .projects, .contact {
     height: 100%;
-    width: 100%;
+    width: 75%;
     color: white;
     font-family: "Press Start 2P";
     text-align: left;
