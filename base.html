@@ -14,9 +14,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     
 </head>
+
 <body>
     <div class="frontPage">
         <!----------------TITLE------------------------------->
+
         <div class="titleBox">
           <!-- <img src="http://res.cloudinary.com/adamlancon/image/upload/v1506383159/megamanfullname_toxqvk.png" /> -->
           <img src = "./images/Rex1.png" />
@@ -24,18 +26,22 @@
         </div>
       
         <!-------------LANDING PAGE-------------------------->
+
         <div class="littleAdam">
           <!-- <img id="littleAdam" src="http://res.cloudinary.com/adamlancon/image/upload/v1506365854/untitled_6_ubbrnf.svg" />
           <img id="littleAdam2" src="http://res.cloudinary.com/adamlancon/image/upload/v1506368157/untitled_7_um0bkp.svg" /> -->
           <img id="littleAdam" src="./images/pixil-frame-0.png" />
           <img id="littleAdam2" src="./images/pixil-frame-1.png" />
         </div>
+
         <div class="adam">
           <!-- <img src="http://res.cloudinary.com/adamlancon/image/upload/v1505344317/untitled_uevddf.svg"/>-->
         </div>
+
         <div class="building">
           <img id="building" src="http://res.cloudinary.com/adamlancon/image/upload/v1506374679/untitled_8_ytd0ph.svg" />
         </div>
+
         <div class="selectors">
           <div class="about">
             <p><i class="fa fa-caret-right" aria-hidden="true"></i>About</p>
@@ -50,8 +56,10 @@
             <p><i class="fa fa-caret-right" aria-hidden="true"></i>Contact</p>
           </div>
         </div>
-      </div>
-      </div>
+
+        
+    </div>
+      
       
       <!-----------------START ABOUT---------------------------------->
       
@@ -72,6 +80,7 @@
       </div>
       
       <!--------------------------------START SKILLS----------------------------------------------------------->
+
       <div class="skillPage">
         <div class="skillTab">
           <span class="close">&times</span>
@@ -142,7 +151,9 @@
           </div> -->
         </div>
       </div>
+
       <!------------------------------START CONTACTS----------------------------------------------------------->
+
       <div class="contactPage">
         <div class="contactTab">
           <span class="closing">&times</span>
@@ -163,10 +174,56 @@
             <a href="#">
             <img src="http://res.cloudinary.com/adamlancon/image/upload/v1506665738/pdfclick_8bit_moptcq.png"></a><br>Resume
             </div> -->
-          </div>
         </div>
+      </div>
+
+      <!---------------------Button to BACKGROUND--------------------------------------------->
+
+      <div id="bg1" class="bg-layer"></div>
+      <div id="bg2" class="bg-layer"></div>
+
+
+
+
+    <!--------------------- JAVA SCRIPT --------------------------------------------->
 
     <script language="JavaScript" type="text/javascript" src="base.js"></script>
+    <script>
+      const images = [
+        "./images/background1.gif",
+        "./images/background3.gif"
+      ];
+
+      let current = 0;
+
+      function fadeBackground() {
+        const bg1 = document.getElementById("bg1");  // Active layer
+        const bg2 = document.getElementById("bg2");  // Hidden layer used for fade
+
+        // To make continous loop
+        const next = (current + 1) % images.length;
+
+        // Swap images
+        bg2.style.backgroundImage = `url('${images[next]}')`;
+
+        // Fade effect
+        bg1.style.opacity = 0;
+        bg2.style.opacity = 1;
+
+        // After fade completes, swap layers
+        setTimeout(() => {
+          bg1.style.backgroundImage = bg2.style.backgroundImage;
+          bg1.style.opacity = 1;
+          bg2.style.opacity = 0;
+          current = next;
+        }, 1000);
+      }
+
+      setInterval(fadeBackground, 13000);
+    </script>
+
+
+
 </body>
 </html>
 
