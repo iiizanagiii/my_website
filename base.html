@@ -17,7 +17,7 @@
 
 <body>
     <div class="frontPage">
-        <!----------------TITLE------------------------------->
+        <!--------------------- Title Box ------------------------------>
 
         <div class="titleBox">
           <!-- <img src="http://res.cloudinary.com/adamlancon/image/upload/v1506383159/megamanfullname_toxqvk.png" /> -->
@@ -25,7 +25,7 @@
           <p>COMPUTER VISION ENGINEER</p>
         </div>
       
-        <!-------------LANDING PAGE-------------------------->
+        <!--------------------- Little timmy --------------------------->   
 
         <div class="littleAdam">
           <!-- <img id="littleAdam" src="http://res.cloudinary.com/adamlancon/image/upload/v1506365854/untitled_6_ubbrnf.svg" />
@@ -56,12 +56,9 @@
             <p><i class="fa fa-caret-right" aria-hidden="true"></i>Contact</p>
           </div>
         </div>
-
-        
     </div>
       
-      
-      <!-----------------START ABOUT---------------------------------->
+      <!--------------------- ABOUT ------------------------------>
       
       <div class="aboutPage">
         <div class="aboutTab">
@@ -79,7 +76,7 @@
         </div>
       </div>
       
-      <!--------------------------------START SKILLS----------------------------------------------------------->
+      <!--------------------- SKILLS ----------------------------->
 
       <div class="skillPage">
         <div class="skillTab">
@@ -116,7 +113,7 @@
         </div>
       </div>
       
-      <!---------------------START PROJECTS--------------------------------------------->
+      <!--------------------- PROJECTS --------------------------->
       
       <div class="projectPage">
         <div class="projectTab">
@@ -152,7 +149,7 @@
         </div>
       </div>
 
-      <!------------------------------START CONTACTS----------------------------------------------------------->
+      <!--------------------- CONTACTS --------------------------->
 
       <div class="contactPage">
         <div class="contactTab">
@@ -177,50 +174,18 @@
         </div>
       </div>
 
-      <!---------------------Button to BACKGROUND--------------------------------------------->
+      <!--------------------- Background Video --------------------->
 
-      <div id="bg1" class="bg-layer"></div>
-      <div id="bg2" class="bg-layer"></div>
+      <video autoplay loop muted playsinline id="bg-video">
+        <source src="/my_website/images/background.mp4" type="video/mp4">
+      </video>
 
 
-
-
-    <!--------------------- JAVA SCRIPT --------------------------------------------->
+    <!----------------------- JAVA SCRIPT ------------------------------>
 
     <script language="JavaScript" type="text/javascript" src="base.js"></script>
-    <script>
-      const images = [
-        "./images/background1.gif",
-        "./images/background3.gif"
-      ];
+    
 
-      let current = 0;
-
-      function fadeBackground() {
-        const bg1 = document.getElementById("bg1");  // Active layer
-        const bg2 = document.getElementById("bg2");  // Hidden layer used for fade
-
-        // To make continous loop
-        const next = (current + 1) % images.length;
-
-        // Swap images
-        bg2.style.backgroundImage = `url('${images[next]}')`;
-
-        // Fade effect
-        bg1.style.opacity = 0;
-        bg2.style.opacity = 1;
-
-        // After fade completes, swap layers
-        setTimeout(() => {
-          bg1.style.backgroundImage = bg2.style.backgroundImage;
-          bg1.style.opacity = 1;
-          bg2.style.opacity = 0;
-          current = next;
-        }, 1000);
-      }
-
-      setInterval(fadeBackground, 13000);
-    </script>
 
 
 
