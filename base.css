@@ -120,55 +120,6 @@ html, body {
     margin-left: 28px;
   }
 
-  .skillName1{
-    font-family: "Press Start 2P";
-    color: #ff2595;
-    font-size: 15px;
-    margin-left: 31px;
-  }
-
-  .skillName2{
-    font-family: "Press Start 2P";
-    color: #ff2595;
-    font-size: 15px;
-    margin-left:25px ;
-  }   
-  .skillName3{
-    font-family: "Press Start 2P";
-    color: #ff2595;
-    font-size: 15px;
-  }   
-  .skillName4{
-    font-family: "Press Start 2P";
-    color: #ff2595;
-    font-size: 15px;
-    margin-left:30px ;
-  }   
-  
-  .skillIcon1{
-    height: 70px;
-    width: 150px;
-    align-items: center center;
-
-  }
-
-  .skillIcon2{
-    height: 50px;
-    width: 150px;
-    align-items: center center;
-  }
-
-  .skillIcon3{
-    height: 100px;
-    width: 150px;
-    align-items: center center;
-  }
-
-  .skillIcon4{
-    height: 100px;
-    width: 150px;
-    align-items: center center;
-  }
   
   /*----------------------START FOR CLICKABLE SELECTORS--------------*/
   
@@ -243,11 +194,11 @@ html, body {
   
   
   #close {
-    font-size: 40px;
+    grid-area: 1/4/2/5;
+    font-size: 50px;
     color: red;
     animation: blink 1s steps(2, end) infinite;
-    grid-area: 1/3/2/4;
-    justify-self: center;
+    margin-right: 25px;
   }
   
   #close:hover {
@@ -289,17 +240,16 @@ html, body {
     height: 120px;
   }
   
-  .skillTab > .close {
-    grid-area: 1/3/2/4;
-    justify-self: end;
+  .close {
+    position: absolute;
+    right: 5px;
     font-family: "Press Start 2P";
+    font-size: 40px;
     color: red;
     animation: blink 1s steps(2, end) infinite;
-    font-size: 40px;
-    margin-right: 15px;
   }
   
-  .skillTab > .close:hover {
+  .close:hover {
     cursor: pointer;
   }
   
@@ -312,8 +262,133 @@ html, body {
     justify-self: center;
   }
   
-  #html {
-    grid-area: 1/1;
+  /* Name of all the skills */
+  .skillName1{
+    font-family: "Press Start 2P";
+    color: #ff2595;
+    font-size: 15px;
+    margin-left: 31px;
+  }
+  .skillName2{
+    font-family: "Press Start 2P";
+    color: #ff2595;
+    font-size: 15px;
+    margin-left:25px ;
+  }   
+  .skillName3{
+    font-family: "Press Start 2P";
+    color: #ff2595;
+    font-size: 15px;
+  }   
+  .skillName4{
+    font-family: "Press Start 2P";
+    color: #ff2595;
+    font-size: 15px;
+    margin-left:30px ;
+  }   
+  .skillName5{
+    font-family: "Press Start 2P";
+    color: #ff2595;
+    font-size: 15px;
+    margin-left:45px ;
+  } 
+  .skillName6{
+    font-family: "Press Start 2P";
+    color: #ff2595;
+    font-size: 15px;
+    margin-left:50px ;
+  } 
+  .skillName7{
+    font-family: "Press Start 2P";
+    color: #ff2595;
+    font-size: 15px;
+    margin-left:3px ;
+  } 
+  .skillName8{
+    font-family: "Press Start 2P";
+    color: #ff2595;
+    font-size: 15px;
+    margin-left:40px ;
+  } 
+  .skillName9{
+    font-family: "Press Start 2P";
+    color: #ff2595;
+    font-size: 15px;
+    margin-left:10px ;
+  } 
+  .skillName10{
+    font-family: "Press Start 2P";
+    color: #ff2595;
+    font-size: 15px;
+    margin-left:40px ;
+  } 
+  .skillName11{
+    font-family: "Press Start 2P";
+    color: #ff2595;
+    font-size: 15px;
+    margin-left:40px ;
+  } 
+
+  /* Logo for all the skills */
+  .python{
+    height: 70px;
+    width: 150px;
+    align-items: center center;
+  }
+  .pytorch{
+    height: 50px;
+    width: 150px;
+    align-items: center center;
+  }
+  .tensorflow{
+    height: 100px;
+    width: 150px;
+    align-items: center center;
+  }
+  .opencv{
+    height: 100px;
+    width: 150px;
+    align-items: center center;
+  }
+  .html{
+    height: 100px;
+    width: 150px;
+    align-items: center center;
+  }
+  .css{
+    height: 100px;
+    width: 150px;
+    align-items: center center;
+  }
+  .javascript{
+    height: 100px;
+    width: 150px;
+    align-items: center center;
+  }
+  .jquery{
+    height: 100px;
+    width: 150px;
+    align-items: center center;
+  }
+  .bootstrap{
+    height: 100px;
+    width: 150px;
+    align-items: center center;
+  }
+  .ajax{
+    height: 100px;
+    width: 150px;
+    align-items: center center;
+  }
+  .react{
+    height: 100px;
+    width: 150px;
+    align-items: center center;
+  }
+
+
+  /* #html {
+    grid-area: 1/1/1/1;
   }
   
   #css {
@@ -338,7 +413,8 @@ html, body {
   
   #react {
     grid-area: 3/2;
-  }
+  } */
+
   /*------------------------END OF SKILLS---------------------*/
   
   
@@ -526,21 +602,13 @@ html, body {
     align-self: center;
   }
   
-  .closing {
-    grid-area: 1/4/2/5;
-    font-size: 40px;
-    color: red;
-    animation: blink 1s steps(2, end) infinite;
-    margin-right: 25px;
-  }
-  
   .resume {
     grid-area: 3/1/4/4;
     justify-self: center;
+    margin-left: 150px;
     height: 60%;
     width: 15%;
-    color: white;
-    margin-left: 150px;
+    color: pink;
   }
   
   .resume:hover {
@@ -552,6 +620,15 @@ html, body {
     width: 60px;
     margin-left: 12px;
   }
+  
+  .closing {
+    grid-area: 1/4/2/5;
+    font-size: 40px;
+    color: red;
+    animation: blink 1s steps(2, end) infinite;
+    margin-right: 25px;
+  }
+  
   
   
   .closing:hover {
@@ -682,12 +759,16 @@ html, body {
       grid-area: 1/3/2/4;
     }
     
+    .close {
+      grid-area: 1/3/2/4;
+    }
+
     .projectTab > h1 {
       grid-area: 1/1/2/4;
       font-size: 13px;
     }
     
-    .first {
+    /* .first {
       grid-area: 2/1/3/2;
     }
     
@@ -722,7 +803,7 @@ html, body {
     .ninth {
       grid-area: 4/3/5/4;
     }
-    
+     */
     .social {
       height: 50%;
       align-self: center;
@@ -758,5 +839,6 @@ html, body {
     .projectTab > div > a > img {
       border: solid blue 1px;
     }
+
   }
   
