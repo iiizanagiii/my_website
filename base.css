@@ -16,11 +16,11 @@ html, body {
   z-index: -1;         /* sends it behind the content */
 }
 
-.infoSection{
+/* .infoSection{
   margin-left: 100px;
   margin-bottom: 100px;
 }
- 
+  */
   
   /*IMAGES FOR FRONT PAGE AND KEYFRAMES*/
   
@@ -88,6 +88,8 @@ html, body {
     grid-area: 2/6/6/7;
     justify-self: end;
   }
+
+  
   /*-----------------------------------START OF FRONT PAGE------------------------------------*/
   
   .frontPage {
@@ -174,31 +176,34 @@ html, body {
     color: white;
     font-family: "Press Start 2P";
   }
-  
-  .aboutTab > p {
-    grid-area: 1/2/3/3;
-    font-size: 14px;
-    line-height: 125%;
-  }
-  
+
   .aboutTab > img {
     grid-area: 1/1/3/2;
     width: 200px;
     height: 200px;
+    margin-left: 100px;
+    margin-top: 75px;
   }
-  
-  
   #adam2 {
     animation: wind 0.5s cubic-bezier(1,0.5,0.5,1) infinite;
+    margin-left: 100px;
+    margin-top: 75px;
   }
-  
+
+  .aboutTab > p {
+    grid-area: 1/2/3/3;
+    font-size: 14px;
+    line-height: 250%;
+    margin-top: 25px;
+    margin-right: 15px;
+  }
   
   #close {
     grid-area: 1/4/2/5;
     font-size: 50px;
     color: red;
     animation: blink 1s steps(2, end) infinite;
-    margin-right: 25px;
+    
   }
   
   #close:hover {
@@ -210,7 +215,7 @@ html, body {
   /*------------------------START OF SKILLS---------------------*/
   
   .skillPage {
-    height: 100%;
+    height: 10%;
     width: 100%;
     display: none;
    /* grid-area: 1/1/2/7;*/
@@ -231,7 +236,7 @@ html, body {
     width: 100%;
   }
   .skillWords > p {
-    line-height: 130%;
+    line-height: 250%;
     text-align: center;
   }
   
@@ -385,36 +390,6 @@ html, body {
     width: 150px;
     align-items: center center;
   }
-
-
-  /* #html {
-    grid-area: 1/1/1/1;
-  }
-  
-  #css {
-    grid-area: 1/2;
-  }
-  
-  #javascript {
-    grid-area: 1/3;
-  }
-  
-  #bootstrap {
-    grid-area: 2/1;
-  }
-  
-  #jquery {
-    grid-area: 2/2;
-  }
-  
-  #ajax {
-    grid-area: 2/3;
-  }
-  
-  #react {
-    grid-area: 3/2;
-  } */
-
   /*------------------------END OF SKILLS---------------------*/
   
   
@@ -522,6 +497,8 @@ html, body {
     justify-self: center;
   }
   
+
+   /* close button*/
   .closer {
     grid-area: 1/5/2/6;
     justify-self: end;
@@ -550,7 +527,7 @@ html, body {
   
   .contactTab {
     display: grid;
-    grid-template: 1fr 1fr 1fr/ 1fr 1fr 1fr;
+    grid-template:  1fr 1fr 1fr/ 1fr 1fr 1fr;
     height: 100%;
     width: 100%;
   }
@@ -579,6 +556,8 @@ html, body {
     width: 60%;
     justify-self: center;
   }
+
+
   
   /* .facebook {
     grid-area: 1/1/2/2;
@@ -603,11 +582,8 @@ html, body {
   }
   
   .resume {
-    grid-area: 3/1/4/4;
+    grid-area: 3/2/4/3;
     justify-self: center;
-    margin-left: 150px;
-    height: 60%;
-    width: 15%;
     color: pink;
   }
   
@@ -622,19 +598,19 @@ html, body {
   }
   
   .closing {
-    grid-area: 1/4/2/5;
+    position: absolute;
+    right: 5px;
+    font-family: "Press Start 2P";
     font-size: 40px;
     color: red;
     animation: blink 1s steps(2, end) infinite;
-    margin-right: 25px;
   }
-  
-  
-  
+
   .closing:hover {
     cursor: pointer;
   }
   
+
   /*---------------------END OF CONTACTS--------------------------------*/
   
   /*-----------------------------RESPONSIVE----------------------------------------------*/
@@ -642,13 +618,14 @@ html, body {
   /*-----------------------------RESPONSIVE----------------------------------------------*/
   /*-----------------------------RESPONSIVE----------------------------------------------*/
   
+  /* Screen resolution at 850px (small laptops/ tablets) */
   @media screen and (max-width: 850px) {
     .titleBox > img {
       width: 400px;
     }
     
     .titleBox > p {
-      font-size: 17.5px;
+      font-size: 15.5px;
     }
     
     .selectors {
@@ -669,7 +646,7 @@ html, body {
       grid-area: 2/1/4/4;
       align-self: start;
       font-size: 13px;
-      margin-right: 10px;
+      margin-left: 100px;
       line-height: 125%;
     }
     
@@ -695,9 +672,11 @@ html, body {
       width: 60px;
       align-self: end;
     }
+
     
   }
   
+  /* Screen resolution at 550px (large phones/ small tablets) */
   @media screen and (max-width: 550px) {
     
     .titleBox > img {
@@ -804,6 +783,7 @@ html, body {
       grid-area: 4/3/5/4;
     }
      */
+    
     .social {
       height: 50%;
       align-self: center;
@@ -811,6 +791,7 @@ html, body {
     
   }
   
+  /* Screen resolution at (small phones, Iphone SE??) */
   @media screen and (max-width: 375px) {
     .selectors {
       grid-area: 2/2/3/3;
@@ -842,3 +823,21 @@ html, body {
 
   }
   
+  /* Screen resolution at 500px smallest screen size */
+  @media screen and (max-width: 500px){
+    .selectors {
+      grid-area: 2/2/2/3;
+      margin-top: 50px;
+      font-size: 10px;
+    }
+
+    .languages {
+      
+      height: -100px;
+      width: 0px;
+    }
+
+    /* .resume{
+
+    } */
+  }
