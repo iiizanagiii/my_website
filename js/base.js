@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $(".about").click(function() {
+    $("about").click(function() {
       $(".frontPage").fadeOut(500);
       $(".aboutPage")
         .delay(500)

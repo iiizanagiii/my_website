@@ -64,13 +64,25 @@
     grid-area: 1/3/2/4;
   } */
   
-  .github {
-    grid-area: 1/4/2/5;
-    align-self: center;
-  }
+  /* Container that holds your github icon */
+.github {
+  display: grid;              
+  place-items: center;        
+  height: 100px;              
+  width: 100px;               
+}
+
+/* Image inside link */
+.github img {
+  max-width: 100%;            /* make image fit inside container */
+  max-height: 100%;           /* maintain aspect ratio */
+  align-self: center
+}
+
+
   
   .linkedin {
-    grid-area: 1/3/2/4;
+    grid-area: 1/3/2/3;
     align-self: center;
   }
   
