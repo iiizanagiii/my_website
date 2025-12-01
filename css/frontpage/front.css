@@ -1,0 +1,31 @@
+  /*-----------------------------------START OF FRONT PAGE------------------------------------*/
+  
+  .frontPage {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template: 1fr 150px 55px 55px 55px / 1fr 1fr 1fr 1fr 1fr 290px; 
+  }
+  
+  .titleBox {
+    grid-area: 1/2/2/5;
+    height: 100%;
+    width: 100%;
+    color: #ff2595;
+    font-family: "Press Start 2P";
+    white-space: nowrap;
+    margin-left: 25%;
+    margin-top: 15px;
+  }
+  
+  .titleBox > img {
+    width: 600px;
+    height: 200px;
+    
+  }
+  
+  .titleBox > p {
+    margin-top: -1px;
+    font-size: 24px;
+    margin-left: 28px;
+  }

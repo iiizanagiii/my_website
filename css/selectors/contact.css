@@ -1,0 +1,106 @@
+/*---------------------START OF CONTACTS--------------------------------*/
+  
+  
+  .contactPage {
+    display: none;
+    height: 100%;
+    width: 100%;
+    font-family: "Press Start 2P";
+  }
+  
+  .contactTab {
+    display: grid;
+    grid-template:  1fr 1fr 1fr/ 1fr 1fr 1fr;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .poke-box {
+    grid-area: 2/2/2/2;
+    background: rgba(24, 24, 24, 0.8);   
+    border: 4px solid #000000;             
+
+    box-shadow:
+      0 0 0 4px #ffffff,                  
+      0 0 0 8px #4a4a4a;                   
+
+    width: fit-content;
+    display: inline-block;
+
+    image-rendering: pixelated;      /*pixelated style*/ 
+    border-radius: 4px;
+  }
+
+  .words { 
+    color: white; 
+    font-size: 14px; 
+    line-height: 250%; 
+  }
+
+  .social {
+    grid-area: 1/1/2/4;
+    display: grid;
+    grid-template: 100%/ 1fr 1fr 1fr 1fr 1fr;
+    height: 75%;
+  }
+  
+  .social > div {
+    height: 50%;
+    width: 50%;
+    justify-self: center;
+  }
+
+
+  
+  /* .facebook {
+    grid-area: 1/1/2/2;
+  }
+  
+  .twitter {
+    grid-area: 1/2/2/3;
+  }
+  
+  .codepen {
+    grid-area: 1/3/2/4;
+  } */
+  
+  .github {
+    grid-area: 1/4/2/5;
+    align-self: center;
+  }
+  
+  .linkedin {
+    grid-area: 1/3/2/4;
+    align-self: center;
+  }
+  
+  .resume {
+    grid-area: 3/2/4/3;
+    justify-self: center;
+    color: pink;
+    height: 100px;
+    width: 100px;
+  }
+  
+  .resume:hover {
+    cursor: pointer;
+  }
+  
+  .resume > a > img {
+    height: 80px;
+    width: 60px;
+    margin-left: 12px;
+  }
+  
+  .closing {
+    position: absolute;
+    right: 5px;
+    font-family: "Press Start 2P";
+    font-size: 40px;
+    color: red;
+    animation: blink 1s steps(2, end) infinite;
+  }
+
+  .closing:hover {
+    cursor: pointer;
+  }
