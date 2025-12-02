@@ -1,29 +1,4 @@
-html, body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;   /* Removed the scroll bar in the side of screen */
-}
-
-#bg-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;   /* makes video fill the screen */
-  z-index: -1;         /* sends it behind the content */
-}
-
-/* .infoSection{
-  margin-left: 100px;
-  margin-bottom: 100px;
-}
-  */
-  
   /*IMAGES FOR FRONT PAGE AND KEYFRAMES*/
-  
   @keyframes typing { 
     from { width: 0 }
     to { width: 100% }
@@ -47,7 +22,7 @@ html, body {
     to {opacity: 0}
   }
   
-  .littleAdam {    /*BOX CONTAINTING LITTLE ADAMS*/
+  /* .littleAdam {    
     grid-area: 2/6/3/7;
     z-index: 1;
     height: 100%;
@@ -55,8 +30,8 @@ html, body {
     display: grid;
     grid-template: 50% 50%/ 50% 50%;
   }
-  
-  #littleAdam, #littleAdam2 {
+   */
+  /* #littleAdam, #littleAdam2 {
     grid-area: 1/1/3/3;
     min-height: 100px;
     max-height: 100px;
@@ -69,42 +44,31 @@ html, body {
   #littleAdam2 {
     animation: wind 0.5s cubic-bezier(1,0.5,0.5,1) infinite;
   }
-  
-  .adam { /*box containing image*/
+   */
+  /* .adam { 
     display: none;
     height: 100%;
     width: 100%;
     grid-area: 3/3/6/5;
-  }
+  } */
   
   /* img { 
     height: 150%;
     width: 100%;
   } */
   
-  .building {
+  /* .building {
     height: 100%;
     width: 100%;
     grid-area: 2/6/6/7;
     justify-self: end;
-  }
+  } */
 
   
 
   
   /*----------------------START FOR CLICKABLE SELECTORS--------------*/
-  
-  
-  .selectors {
-    grid-area: 2/3/2/7;
-    width: 37%;
-    height: 100%;
-    display: grid;
-    font-size: 25px; 
-    margin-left: 170px;
-    margin-top: -90px;
-  }
-  
+   
   .about, .skills, .projects, .contact {
     height: 100%;
     width: 75%;
@@ -132,6 +96,6 @@ html, body {
     animation: blink 1s steps(2, end) infinite;
     font-size: 20px;
   }
-  /*----------------------END OF FRONT PAGE AND CLICKABLE SELECTORS--------------*/
+
   
   

@@ -1,31 +1,60 @@
   /*-----------------------------------START OF FRONT PAGE------------------------------------*/
-  
-  .frontPage {
-    display: grid;
-    height: 100%;
+  html, body {
     width: 100%;
-    grid-template: 1fr 150px 55px 55px 55px / 1fr 1fr 1fr 1fr 1fr 290px; 
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;   /* Removed the scroll bar in the side of screen */
   }
-  
-  .titleBox {
-    grid-area: 1/2/2/5;
+
+  #bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* makes video fill the screen */
+    z-index: -1;         /* sends it behind the content */
+  }
+
+  .frontPage {
+    display: flex;
+    flex-direction: column;   
     height: 100%;
     width: 100%;
+    align-items: center;
+   
+  }
+
+  .titleBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 15px;
     color: #ff2595;
     font-family: "Press Start 2P";
     white-space: nowrap;
-    margin-left: 25%;
-    margin-top: 15px;
-  }
-  
+}
+
+
   .titleBox > img {
     width: 600px;
     height: 200px;
-    
   }
-  
+
   .titleBox > p {
     margin-top: -1px;
     font-size: 24px;
     margin-left: 28px;
+  }
+
+  .selectors {
+    width: 27%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;  
+    align-items: center;      
+    font-size: 25px;
+    margin-left: 100px;
   }
