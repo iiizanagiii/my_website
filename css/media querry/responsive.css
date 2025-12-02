@@ -1,0 +1,162 @@
+/*-----------------------------RESPONSIVE----------------------------------------------*/
+
+/* 850px */
+@media screen and (max-width: 850px) {
+
+  .titleBox > img {
+    width: 400px;
+  }
+
+  .titleBox > p {
+    font-size: 15.5px;
+  }
+
+  .selectors {
+    font-size: 16px;
+  }
+
+  .aboutTab {
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+  }
+
+  .aboutTab > img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .aboutTab > p {
+    font-size: 13px;
+    line-height: 125%;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .skillWords {
+    font-size: 12px;
+  }
+
+  .languages {
+    width: 80%;
+    height: auto;
+  }
+
+  .social > div {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+/* 550px */
+@media screen and (max-width: 550px) {
+
+  .titleBox > img {
+    width: 300px;
+  }
+
+  .titleBox > p {
+    font-size: 13px;
+  }
+
+  .selectors {
+    font-size: 14px;
+    margin-top: 30px;
+  }
+
+  .aboutTab > p {
+    font-size: 12px;
+  }
+
+  .skillPage {
+    font-size: 10px;
+  }
+
+  .skillTab > img {
+    width: 60%;
+    height: 60%;
+  }
+
+  .languages {
+    height: auto;
+    grid-template: 1fr 1fr / repeat(4, 1fr);
+  }
+
+  .languages > img {
+    height: 60px;
+  }
+
+  .skillWords {
+    font-size: 9px;
+  }
+
+  .projectTab {
+    grid-template: 10% 1fr 1fr 1fr / repeat(3, 1fr);
+  }
+
+  .projectTab > div {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+/* 500px */
+@media screen and (max-width: 500px) {
+
+  .selectors {
+    font-size: 12px;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .languages {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* CONTACTS responsive — 375px */
+@media screen and (max-width: 375px) {
+
+  /* Shrink the icons and reduce gap */
+  .icon-row {
+    gap: 30px;
+    flex-wrap: wrap;           /* allow icons to go to next line */
+    justify-content: center;   /* center icons */
+    margin-top: 20px;
+  }
+
+  .contact-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .contact-icon img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  /* Shrink the poke-box */
+  .poke-box {
+    width: 160px;
+    padding: 10px;
+    left: 50%;
+    top: 65%;                  /* move it lower on screen */
+    transform: translate(-50%, -50%);
+  }
+
+  .words {
+    font-size: 11px;
+    line-height: 150%;
+  }
+
+  .closing {
+    font-size: 28px;
+    top: 5px;
+    right: 5px;
+  }
+
+  .resume {
+    width: 70px;
+    height: 70px;
+    margin-top: 20px;
+  }
+}
