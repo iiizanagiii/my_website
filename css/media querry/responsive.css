@@ -1,162 +1,96 @@
-/*-----------------------------RESPONSIVE----------------------------------------------*/
+/*-----------------------------------BASE RESPONSIVE-----------------------------------*/
+/* @media screen and (max-width: 400px) {
+  :root {
+    --title-width: 150px;
+    --title-height: 50px;
+    --selector-width: 30%;
+    --selector-font-size: 15px;
+    --font-size: 12px;
 
-/* 850px */
-@media screen and (max-width: 850px) {
+    --about-image-size: 80px;
+    --about-poke-width: 100%;
+    --about-poke-padding: 6px 10px;
 
-  .titleBox > img {
-    width: 400px;
+    --skill-image-size: 60px;
+    --skill-font-size: 11px;
+    --skill-padding: 2px;
+
+    --contact-icon-size: 60px;
+    --contact-poke-padding: 6px 10px;
+    --contact-text-line-height: 130%;
   }
+} */
 
-  .titleBox > p {
-    font-size: 15.5px;
-  }
+@media screen and (max-width: 600px) {
+  :root {
+    --title-width: 300px;
+    --title-height: 80px;
+    --font-size: 12px;
+    --selector-width: 50%;
+    --selector-font-size: 20px;
+    --margine-left-main: 90px;
 
-  .selectors {
-    font-size: 16px;
-  }
+    --about-image-size: 120px;
+    --about-poke-width: 90%;
+    --about-poke-padding: 8px 12px;
+    --about-text-size: 10px;
+    --about-image-margin-left: 20px;
+    --about-image-margin-top: 40px;
 
-  .aboutTab {
-    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
-  }
+    --skill-image-size: 60px;
+    --skill-font-size: 12px;
+    --skill-padding: 5px;
 
-  .aboutTab > img {
-    height: 150px;
-    width: 150px;
-  }
-
-  .aboutTab > p {
-    font-size: 13px;
-    line-height: 125%;
-    margin-left: 0;
-    text-align: center;
-  }
-
-  .skillWords {
-    font-size: 12px;
-  }
-
-  .languages {
-    width: 80%;
-    height: auto;
-  }
-
-  .social > div {
-    height: 60px;
-    width: 60px;
-  }
-}
-
-/* 550px */
-@media screen and (max-width: 550px) {
-
-  .titleBox > img {
-    width: 300px;
-  }
-
-  .titleBox > p {
-    font-size: 13px;
-  }
-
-  .selectors {
-    font-size: 14px;
-    margin-top: 30px;
-  }
-
-  .aboutTab > p {
-    font-size: 12px;
-  }
-
-  .skillPage {
-    font-size: 10px;
-  }
-
-  .skillTab > img {
-    width: 60%;
-    height: 60%;
-  }
-
-  .languages {
-    height: auto;
-    grid-template: 1fr 1fr / repeat(4, 1fr);
-  }
-
-  .languages > img {
-    height: 60px;
-  }
-
-  .skillWords {
-    font-size: 9px;
-  }
-
-  .projectTab {
-    grid-template: 10% 1fr 1fr 1fr / repeat(3, 1fr);
-  }
-
-  .projectTab > div {
-    height: 100px;
-    width: 100px;
+    --contact-icon-size: 80px;
+    --contact-poke-padding: 8px 12px;
+    --contact-text-line-height: 180%;
   }
 }
 
-/* 500px */
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  :root {
+    --title-width: 450px;
+    --title-height: 150px;
+    --font-size: 18px;
+    --selector-width: 35%;
+    --selector-font-size: 20px;
+    --margine-left-main: 50px;
 
-  .selectors {
-    font-size: 12px;
-    margin-top: 40px;
-    text-align: center;
+    --about-image-size: 160px;
+    --about-poke-width: 80%;
+    --about-poke-padding: 10px 15px;
+
+    --skill-image-size: 80px;
+    --skill-font-size: 13px;
+    --skill-padding: 8px;
+
+    --contact-icon-size: 100px;
+    --contact-poke-padding: 10px 15px;
+    --contact-text-line-height: 220%;
   }
+}
 
-  .languages {
-    width: 100%;
-    height: auto;
+@media screen and (min-width: 1025px) {
+  :root {
+    --title-width: 600px;
+    --title-height: 200px;
+    --font-size: 24px;
+    --selector-width: 27%;
+    --selector-font-size: 20px;
+    --margine-left-main: 80px;
+
+
+    --about-image-size: 200px;
+    --about-poke-width: fit-content;
+    --about-poke-padding: 12px 18px;
+
+    --skill-image-size: 100px;
+    --skill-font-size: 14px;
+    --skill-padding: 10px;
+
+    --contact-icon-size: 120px;
+    --contact-poke-padding: 12px 18px;
+    --contact-text-line-height: 250%;
   }
 }
 
-/* CONTACTS responsive — 375px */
-@media screen and (max-width: 375px) {
-
-  /* Shrink the icons and reduce gap */
-  .icon-row {
-    gap: 30px;
-    flex-wrap: wrap;           /* allow icons to go to next line */
-    justify-content: center;   /* center icons */
-    margin-top: 20px;
-  }
-
-  .contact-icon {
-    width: 70px;
-    height: 70px;
-  }
-
-  .contact-icon img {
-    max-width: 100%;
-    max-height: 100%;
-  }
-
-  /* Shrink the poke-box */
-  .poke-box {
-    width: 160px;
-    padding: 10px;
-    left: 50%;
-    top: 65%;                  /* move it lower on screen */
-    transform: translate(-50%, -50%);
-  }
-
-  .words {
-    font-size: 11px;
-    line-height: 150%;
-  }
-
-  .closing {
-    font-size: 28px;
-    top: 5px;
-    right: 5px;
-  }
-
-  .resume {
-    width: 70px;
-    height: 70px;
-    margin-top: 20px;
-  }
-}

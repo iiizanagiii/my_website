@@ -1,3 +1,22 @@
+:root {   
+    --primary-color: #ff2595;      
+    --text-color: white;
+    --background-color: rgba(24, 24, 24, 0.8);
+    --close-color: red;
+
+    --main-font: "Press Start 2P", monospace;
+
+    --video-z: -1;
+    --page-z: 1;
+    --poke-box-z: 50;
+
+    --gap: 40px;
+    --margin-left: 100px;
+
+    --blink-speed: 1s;
+    --wind-speed: 0.5s;
+  }
+
   /*IMAGES FOR FRONT PAGE AND KEYFRAMES*/
   @keyframes typing { 
     from { width: 0 }
@@ -40,7 +59,6 @@
     margin-left: 95px;
     margin-top: 100px;
   }
-  
   #littleAdam2 {
     animation: wind 0.5s cubic-bezier(1,0.5,0.5,1) infinite;
   }
@@ -64,9 +82,6 @@
     justify-self: end;
   } */
 
-  
-
-  
   /*----------------------START FOR CLICKABLE SELECTORS--------------*/
    
 .selector {
@@ -97,9 +112,3 @@
   font-size: 20px;
   animation: blink 1s steps(2, end) infinite;
 }
-
-
-  
-
-
-  

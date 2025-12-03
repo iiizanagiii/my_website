@@ -1,3 +1,22 @@
+  :root {
+    /* Front page sizes */
+    --title-width: 600px;
+    --title-height: 200px;
+
+    --font-size: 24px;
+
+    --selector-width: 27%;
+    --selector-font-size: 25px;
+    --margine-left-main: 90px;
+
+    /* Front page video */
+    --video-width: 100%;
+    --video-height: 100%;
+  }
+  
+  
+  
+  
   /*-----------------------------------START OF FRONT PAGE------------------------------------*/
   html, body {
     width: 100%;
@@ -11,10 +30,11 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: var(--video-width);
+    height: var(--video-height);
+    z-index: var(--video-z);
     object-fit: cover;
-    z-index: -1;
+
     pointer-events: none;
   }
 
@@ -28,7 +48,7 @@
     width: 100%;
     align-items: center;
     background: transparent; /* Ensure no background hides video */
-}
+  }
 
 
 
@@ -42,22 +62,21 @@
     white-space: nowrap;
   }
   .titleBox > img {
-    width: 600px;
-    height: 200px;
+    width: var(--title-width);
+    height: var(--title-height);
   }
   .titleBox > p {
     margin-top: -1px;
-    font-size: 24px;
+    font-size: var(--font-size);
     margin-left: 28px;
   }
 
   .selectors {
-    width: 27%;
-    height: 50%;
+    width: var(--selector-width);
+    font-size: var(--selector-font-size);
+    margin-left: var(--margine-left-main);
     display: flex;
     flex-direction: column;   
     justify-content: center;  
     align-items: center;      
-    font-size: 25px;
-    margin-left: 100px;
   }

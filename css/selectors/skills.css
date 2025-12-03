@@ -1,5 +1,11 @@
-  /*------------------------START OF SKILLS---------------------*/
+  :root { 
+    --skill-font-size: 14px;
+    --skill-image-size: 100px;
+    --skill-padding: 10px;
+  }
+
   
+  /*------------------------START OF SKILLS---------------------*/
   .skillPage {
     height: 10%;
     width: 100%;
@@ -13,7 +19,24 @@
     display: grid;
     grid-template: 1fr 1fr 1fr/ 1fr 1fr 1fr;
   }
-  
+
+  .poke-box-skill {
+    position: absolute;
+    left: 17.5%;
+    top: 34%;
+    transform: translate(-50%, -50%); 
+    z-index: 50;                       
+    background: rgba(24, 24, 24, 0.8);
+    border: 4px solid #000;
+    box-shadow: 0 0 0 4px #ffffff, 0 0 0 8px #4a4a4a;
+    width: auto;
+    max-width: 30vw;      
+    display: inline-block;
+    image-rendering: pixelated;
+    border-radius: 4px;
+    padding: 12px 18px;
+  }
+
   .skillWords {
     grid-area: 1/1/4/2;
     font-family: "Press Start 2P";
@@ -58,13 +81,12 @@
     font-family: "Press Start 2P";
     color: #ff2595;
     font-size: 15px;
-    margin-left: 31px;
   }
   .skillName-pytorch{
     font-family: "Press Start 2P";
     color: #ff2595;
     font-size: 15px;
-    margin-left:25px ;
+    
   }   
   .skillName-tensorflow{
     font-family: "Press Start 2P";
@@ -75,9 +97,24 @@
     font-family: "Press Start 2P";
     color: #ff2595;
     font-size: 15px;
-    margin-left:15px ;
   }   
-  .skillName-html{
+  .skillName-js{
+    font-family: "Press Start 2P";
+    color: #ff2595;
+    font-size: 15px;
+  } 
+  .skillName-ajax{
+    font-family: "Press Start 2P";
+    color: #ff2595;
+    font-size: 15px;
+  } 
+  .skillName-react{
+    font-family: "Press Start 2P";
+    color: #ff2595;
+    font-size: 15px;
+  } 
+
+  /* .skillName-html{
     font-family: "Press Start 2P";
     color: #ff2595;
     font-size: 15px;
@@ -88,37 +125,19 @@
     color: #ff2595;
     font-size: 15px;
     margin-left:25px ;
-  } 
-  .skillName-js{
-    font-family: "Press Start 2P";
-    color: #ff2595;
-    font-size: 15px;
-    
-  } 
-  .skillName-jquery{
-    font-family: "Press Start 2P";
-    color: #ff2595;
-    font-size: 15px;
-    margin-left:10px ;
-  } 
-  .skillName-bootstrap{
+  }  */
+  /* .skillName-bootstrap{
     font-family: "Press Start 2P";
     color: #ff2595;
     font-size: 15px;
     margin-right:10px ;
-  } 
-  .skillName-ajax{
+  }  */
+  /* .skillName-jquery{
     font-family: "Press Start 2P";
     color: #ff2595;
     font-size: 15px;
-    margin-left:15px ;
-  } 
-  .skillName-react{
-    font-family: "Press Start 2P";
-    color: #ff2595;
-    font-size: 15px;
-    margin-left:12px ;
-  } 
+    margin-left:10px ;
+  }  */
 
   /* Logo for all the skills */
   .python{
@@ -127,7 +146,7 @@
     align-items: center center;
   }
   .pytorch{
-    height: 50px;
+    height: 100px;
     width: 150px;
     align-items: center center;
   }
@@ -140,35 +159,11 @@
     height: 100px;
     width: 90px;
     align-items: center center;
-    margin-left: 20px;
-  }
-  .html{
-    height: 100px;
-    width: 90px;
-    align-items: center center;
-  }
-  .css{
-    height: 100px;
-    width: 90px;
-    align-items: center center;
   }
   .javascript{
     height: 100px;
     width: 90px;
     align-items: center center;
-    margin-left: 20px;
-  }
-  .jquery{
-    height: 100px;
-    width: 150px;
-    align-items: center center;
-
-  }
-  .bootstrap{
-    height: 100px;
-    width: 90px;
-    align-items: center center;
-    margin-left: 10px;
   }
   .ajax{
     height: 100px;
@@ -180,3 +175,25 @@
     width: 90px;
     align-items: center center;
   }
+
+  /* .html{
+    height: 100px;
+    width: 90px;
+    align-items: center center;
+  }
+  .css{
+    height: 100px;
+    width: 90px;
+    align-items: center center;
+  }
+  .bootstrap{
+    height: 100px;
+    width: 90px;
+    align-items: center center;
+    margin-left: 10px;
+  }
+  .jquery{
+    height: 100px;
+    width: 150px;
+    align-items: center center;
+  } */

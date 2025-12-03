@@ -1,3 +1,12 @@
+:root {
+  /* Contact page */
+  --contact-icon-size: 120px;
+  --contact-poke-padding: 12px 18px;
+  --contact-text-line-height: 250%;
+}
+
+
+
 /*---------------------START OF CONTACTS--------------------------------*/
   .contactPage {
     display: none;            
@@ -39,21 +48,21 @@
     display: inline-block;
     image-rendering: pixelated;
     border-radius: 4px;
-    padding: 12px 18px;
+    padding: var(--contact-poke-padding);
   }
   
   .words { 
     color: white; 
     font-size: 14px; 
-    line-height: 250%; 
+    line-height: var(--contact-text-line-height);
   }
     
   .contact-icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 120px;
-    height: 120px;
+    width: var(--contact-icon-size);
+    height: var(--contact-icon-size);
   }
   .contact-icon img {
     max-width: 100%;

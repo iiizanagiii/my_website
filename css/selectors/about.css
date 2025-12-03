@@ -1,63 +1,77 @@
- /*---------------------------------------------START OF ABOUT ME-------------------------------------*/
-  
-  .aboutPage {
-    grid-area: 1/1/2/7;
-    display: none;
-  }
-  
-  .poke-box-about {
-    grid-area: 1/2/3/2;
-    background: rgba(24, 24, 24, 0.8);   
-    border: 4px solid #000000;             
+:root {
+  /* ABOUT PAGE VARIABLES */
+  --about-poke-width: fit-content;
+  --about-poke-padding: 12px 18px;
+  --about-image-size: 200px;
+  --about-text-size: 14px;
+  --about-image-margin-left: 100px;
+  --about-image-margin-top: 75px;
+}
 
-    box-shadow:
-      0 0 0 4px #ffffff,                  
-      0 0 0 8px #4a4a4a;                   
 
-    width: fit-content;
-    display: inline-block;
+/*--------------------------- START OF ABOUT ME ---------------------------*/
+.aboutPage {
+  display: none;
+}
 
-    image-rendering: pixelated;      /*pixelated style*/ 
-    border-radius: 4px;
+/* Poke Box */
+.poke-box-about {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  z-index: 50;
 
-    margin-top: 15px;
-  }
+  background: rgba(24, 24, 24, 0.8);
+  border: 4px solid #000;
+  box-shadow: 0 0 0 4px #ffffff, 0 0 0 8px #4a4a4a;
+  width: var(--about-poke-width);
+  max-width: 80vw;
+  padding: var(--about-poke-padding);
 
-  .aboutTab {
-    display: grid;
-    grid-template: 1fr 1fr/1fr 1.5fr 1fr ;
-    color: white;
-    font-family: "Press Start 2P";
-  }
+  display: inline-block;
+  border-radius: 4px;
+  image-rendering: pixelated;
+}
 
-  .aboutTab > img {
-    grid-area: 1/1/3/2;
-    width: 200px;
-    height: 200px;
-    margin-left: 100px;
-    margin-top: 75px;
-  }
-  #adam2 {
-    animation: wind 0.5s cubic-bezier(1,0.5,0.5,1) infinite;
-    margin-left: 100px;
-    margin-top: 75px;
-  }
+.aboutTab {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1.5fr 1fr;
+  font-family: var(--main-font);
+  color: var(--text-color);
+}
 
-  .aboutTab > p {
-    font-size: 14px;
-    line-height: 50%;
-    /* margin-top: 25px; */
-    /* margin-right: 15px; */
-  }
-  
-  #close {
-    grid-area: 1/4/2/5;
-    font-size: 50px;
-    color: red;
-    animation: blink 1s steps(2, end) infinite;
-    
-  }
-  
-  #close:hover {
-    cursor: pointer;
-  }
+/* Main Images */
+.aboutTab > img {
+  grid-area: 1 / 1 / 3 / 2;
+  width: var(--about-image-size);
+  height: var(--about-image-size);
+  margin-left: var(--about-image-margin-left);
+  margin-top: var(--about-image-margin-top);
+}
+
+#adam2 {
+  animation: wind var(--wind-speed) cubic-bezier(1,0.5,0.5,1) infinite;
+  margin-left: var(--about-image-margin-left);
+  margin-top: var(--about-image-margin-top);
+}
+
+/* Description */
+.aboutTab > p {
+  grid-area: 1 / 2 / 3 / 3;
+  font-size: var(--about-text-size);
+  line-height: 150%;
+}
+
+/* Close Button (Fixed grid area) */
+#close {
+  grid-area: 1 / 3 / 2 / 4;
+  font-size: 40px;
+  color: var(--close-color);
+  animation: blink var(--blink-speed) steps(2, end) infinite;
+  justify-self: end;
+}
+
+#close:hover {
+  cursor: pointer;
+}
