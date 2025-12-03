@@ -69,33 +69,34 @@
   
   /*----------------------START FOR CLICKABLE SELECTORS--------------*/
    
-  .about, .skills, .projects, .contact {
-    height: 100%;
-    width: 75%;
-    color: white;
-    font-family: "Press Start 2P";
-    text-align: left;
-  }
-  
-  i {
-    margin-right: -5px;
-    color: transparent;
-  }
-  
-  .about:hover > p, .skills:hover > p, .projects:hover > p, .contact:hover > p {
-    font-weight: bold;
-    color: #ff2595;
-    
-    cursor: pointer;
-  }
-  
-  .about:hover > p > i, .skills:hover > p > i, .projects:hover > p > i, .contact:hover > p > i {
-    color: white;
-    margin-right: 15px;
-    font-size: 15px;
-    animation: blink 1s steps(2, end) infinite;
-    font-size: 20px;
-  }
+.selector {
+  width: 75%;
+  color: white;
+  font-family: "Press Start 2P";
+  text-align: left;
+  cursor: pointer;
+}
+
+.selector p {
+  transition: 0.2s ease-in-out;
+}
+
+.selector i {
+  margin-right: -5px;
+  color: transparent;
+}
+
+.selector:hover p {
+  font-weight: bold;
+  color: #ff2595;
+}
+
+.selector:hover p i {
+  color: white;
+  margin-right: 15px;
+  font-size: 20px;
+  animation: blink 1s steps(2, end) infinite;
+}
 
 
   
