@@ -1,199 +1,134 @@
-  :root { 
-    --skill-font-size: 14px;
-    --skill-image-size: 100px;
-    --skill-padding: 10px;
+:root {
+    --skill-image-size: 60px;
+    --skill-font-size: 10px;
   }
 
+.skillPage {
+  width: 100%;
+  height: 100vh;
+  display: none;
+  position: relative; 
+  overflow: hidden;
+  background: transparent;
+}
+
+.skillTab { 
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.close {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  z-index: 9999;
+  font-family: "Press Start 2P";
+  font-size: 40px;
+  color: red;
+  animation: blink 1s steps(2, end) infinite;
+  cursor: pointer;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+.poke-box-skill {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(24, 24, 24, 0.85);
+  border: 4px solid #000;
+  box-shadow: 0 0 0 4px #fff, 0 0 0 8px #4a4a4a;
+  border-radius: 4px;
+  padding: var(--skill-padding);
+  max-width: 450px;
+  text-align: center;
+  font-family: "Press Start 2P";
+  color: white;
+  z-index: 10;
+}
+
+.skillWords p {
+  line-height: 160%;
+  font-size: 12px;
+}
+
+.skillItem {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Press Start 2P";
+  color: #ff2595;
+  gap: 8px;
+  z-index: 5;
+}
+
+.skillItem img {
+  width: var(--skill-image-size);
+  height: var(--skill-image-size);
+  image-rendering: pixelated;
+}
+
+.skillItem.python {
+  top: 5%;
+  left: 5%;
+}
+
+.skillItem.pytorch {
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.skillItem.tensorflow {
+  top: 5%;
+  right: 5%;
+}
+
+.skillItem.opencv {
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+}
+
+.skillItem.react {
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+}
+
+.skillItem.ajax {
+  bottom: 5%;
+  left: 5%;
+}
+
+.skillItem.javascript {
+  bottom: 5%;
+  right: 5%;
+}
+
+/* ------------------- RESPONSIVE ------------------- */
+
+@media (max-width: 600px) {
   
-  /*------------------------START OF SKILLS---------------------*/
-  .skillPage {
-    height: 10%;
-    width: 100%;
-    display: none;
-   /* grid-area: 1/1/2/7;*/
-  }
-  
-  .skillTab { 
-    height: 100%;
-    width: 100%;
-    display: grid;
-    grid-template: 1fr 1fr 1fr/ 1fr 1fr 1fr;
-  }
+  .skillItem.python { top: 2%; left: 2%; }
+  .skillItem.pytorch { top: 2%; left: 50%; transform: translateX(-50%); }
+  .skillItem.tensorflow { top: 2%; right: 2%; }
+
+  .skillItem.opencv { top: 45%; left: 2%; }
+  .skillItem.react { top: 45%; right: 2%; }
+
+  .skillItem.ajax { bottom: 2%; left: 2%; }
+  .skillItem.javascript { bottom: 2%; right: 2%; }
 
   .poke-box-skill {
-    position: absolute;
-    left: 17.5%;
-    top: 34%;
-    transform: translate(-50%, -50%); 
-    z-index: 50;                       
-    background: rgba(24, 24, 24, 0.8);
-    border: 4px solid #000;
-    box-shadow: 0 0 0 4px #ffffff, 0 0 0 8px #4a4a4a;
-    width: auto;
-    max-width: 30vw;      
-    display: inline-block;
-    image-rendering: pixelated;
-    border-radius: 4px;
-    padding: 12px 18px;
+    max-width: 85%;
   }
-
-  .skillWords {
-    grid-area: 1/1/4/2;
-    font-family: "Press Start 2P";
-    color: white;
-    height: 100%;
-    width: 100%;
-  }
-  .skillWords > p {
-    line-height: 250%;
-    text-align: center;
-  }
-  
-  /* .languages > img {
-    width: 100px;
-    height: 120px;
-  } */
-  
-  .close {
-    position: absolute;
-    right: 5px;
-    font-family: "Press Start 2P";
-    font-size: 40px;
-    color: red;
-    animation: blink 1s steps(2, end) infinite;
-  }
-  
-  .close:hover {
-    cursor: pointer;
-  }
-  
-  .languages {
-    height: 100%;
-    width: 80%;
-    grid-area: 1/2/4/4;
-    display: grid;
-    grid-template: 1fr 1fr 1fr/ 1fr 1fr 1fr;
-    justify-self: center;
-  }
-  
-  /* Name of all the skills */
-  .skillName-python{
-    font-family: "Press Start 2P";
-    color: #ff2595;
-    font-size: 15px;
-  }
-  .skillName-pytorch{
-    font-family: "Press Start 2P";
-    color: #ff2595;
-    font-size: 15px;
-    
-  }   
-  .skillName-tensorflow{
-    font-family: "Press Start 2P";
-    color: #ff2595;
-    font-size: 15px;
-  }   
-  .skillName-opencv{
-    font-family: "Press Start 2P";
-    color: #ff2595;
-    font-size: 15px;
-  }   
-  .skillName-js{
-    font-family: "Press Start 2P";
-    color: #ff2595;
-    font-size: 15px;
-  } 
-  .skillName-ajax{
-    font-family: "Press Start 2P";
-    color: #ff2595;
-    font-size: 15px;
-  } 
-  .skillName-react{
-    font-family: "Press Start 2P";
-    color: #ff2595;
-    font-size: 15px;
-  } 
-
-  /* .skillName-html{
-    font-family: "Press Start 2P";
-    color: #ff2595;
-    font-size: 15px;
-    margin-left:18px ;
-  } 
-  .skillName-css{
-    font-family: "Press Start 2P";
-    color: #ff2595;
-    font-size: 15px;
-    margin-left:25px ;
-  }  */
-  /* .skillName-bootstrap{
-    font-family: "Press Start 2P";
-    color: #ff2595;
-    font-size: 15px;
-    margin-right:10px ;
-  }  */
-  /* .skillName-jquery{
-    font-family: "Press Start 2P";
-    color: #ff2595;
-    font-size: 15px;
-    margin-left:10px ;
-  }  */
-
-  /* Logo for all the skills */
-  .python{
-    height: 70px;
-    width: 150px;
-    align-items: center center;
-  }
-  .pytorch{
-    height: 100px;
-    width: 150px;
-    align-items: center center;
-  }
-  .tensorflow{
-    height: 80px;
-    width: 100px;
-    align-items: center center;
-  }
-  .opencv{
-    height: 100px;
-    width: 90px;
-    align-items: center center;
-  }
-  .javascript{
-    height: 100px;
-    width: 90px;
-    align-items: center center;
-  }
-  .ajax{
-    height: 100px;
-    width: 90px;
-    align-items: center center;
-  }
-  .react{
-    height: 100px;
-    width: 90px;
-    align-items: center center;
-  }
-
-  /* .html{
-    height: 100px;
-    width: 90px;
-    align-items: center center;
-  }
-  .css{
-    height: 100px;
-    width: 90px;
-    align-items: center center;
-  }
-  .bootstrap{
-    height: 100px;
-    width: 90px;
-    align-items: center center;
-    margin-left: 10px;
-  }
-  .jquery{
-    height: 100px;
-    width: 150px;
-    align-items: center center;
-  } */
+}
