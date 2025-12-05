@@ -1,118 +1,89 @@
-  /*------------------------------------------------------------START OF PROJECTS----------------------------------------------*/
-  
-  .projectPage {
-    display:none;
-    background-image: url("http://res.cloudinary.com/adamlancon/image/upload/v1506500545/megamanselectbackground_uuj0fx.png");
-    background-size: 100% 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
-    font-family: "Press Start 2P";
-  }
-  
-  .projectTab {
-    height: 100%;
-    width: 100%;
-    display: grid;
-    grid-template: 10% 1fr 1fr 1fr 10px /20% 1fr 1fr 1fr 20%;
-  }
-  
-  .projectTab > h1 {
-    grid-area: 1/2/2/5;
-    justify-self: center;
-    align-self: start;
-    font-family: "Press Start 2P";
-    color: red;
-    white-space: nowrap;
-    margin-top: 50px;
-  }
-  
-  .projectTab > div {
-    height:60%;
-    width: 70%;
-    border: solid white 6px;
-    background-color: black;
-    font-size: 10px;
-    color: white;
-    text-align: center;
-  }
-  
-  .projectTab > div:hover {
-    border: solid black 4px;
-    cursor: pointer;
-    background-color: white;
-  }
-  
-  .projectTab > div > a {
-    height: 90%;
-    width: 90%;
-    color: white;
-    font-size: 10px;
-  }
-  
-  .projectTab > div > a > img {
-    height: 95%;
-    width: 95%;
-    border: ridge blue 4px;
-  }
-  
-  .first {
-   grid-area:2/2/3/3;
-    justify-self: center;
-  }
-  
-  .second {
-   grid-area:2/3/3/4;
-    justify-self: center;
-  }
-  
-  .third {
-   grid-area:2/4/3/5; 
-    justify-self: center;
-  }
-  
-  .fourth {
-   grid-area:3/2/4/3;
-    justify-self: center;
-  }
-  
-  .fifth {
-   grid-area:3/3/4/4; 
-    justify-self: center;
-  }
-  
-  .sixth {
-   grid-area:3/4/4/5;
-    justify-self: center;
-  }
-  
-  .seventh {
-   grid-area:4/2/5/3; 
-    justify-self: center;
-  }
-  
-  .eighth {
-   grid-area:4/3/5/4; 
-    justify-self: center;
-  }
-  
-  .ninth {
-    grid-area:4/4/5/5;
-    justify-self: center;
-  }
-  
+/* ------------------------------------------------------------ PROJECTS (FLEX VERSION) ------------------------------------------------------------ */
+.projectPage {
+  display: none;
+  background-image: url("http://res.cloudinary.com/adamlancon/image/upload/v1506500545/megamanselectbackground_uuj0fx.png");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  font-family: "Press Start 2P";
+  position: relative;
+  overflow: hidden;
+}
 
-   /* close button*/
-  .closer {
-    grid-area: 1/5/2/6;
-    justify-self: end;
-    margin-right: 20px;
-    font-size: 40px;
-    color: red;
-    animation: blink 1s steps(2, end) infinite;
-  }
-  
-  .closer:hover {
-    cursor: pointer;
-  }
+.projectTab {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  gap: 30px;
+  position: relative;
+}
+
+.projectTab h1 {
+  color: red;
+  font-family: "Press Start 2P";
+  white-space: nowrap;
+  margin-bottom: 20px;
+}
+
+.closer {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: red;
+  animation: blink 1s steps(2, end) infinite;
+  cursor: pointer;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+.projectGrid {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px 40px;
+}
+
+.projectItem {
+  width: 180px;
+  height: 160px;
+  border: solid white 6px;
+  background-color: black;
+  font-size: 10px;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.2s ease;
+}
+
+.projectItem:hover {
+  border: solid black 4px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.projectItem a {
+  width: 90%;
+  height: 90%;
+  color: inherit;
+  font-size: 10px;
+  text-decoration: none;
+  align-self: center;
+}
+
+.projectItem a img {
+  width: 95%;
+  height: 95%;
+  border: ridge blue 4px;
+}
