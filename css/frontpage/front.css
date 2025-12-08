@@ -23,7 +23,7 @@
     height: 100%;
     margin: 0;
     padding: 0;
-    /* overflow: hidden;  REMOVE THIS */
+    overflow: hidden;
   }
 
   #bg-video {
@@ -50,7 +50,10 @@
     background: transparent; /* Ensure no background hides video */
   }
 
-
+  /* .volumeSlider{
+    width: 75%;
+    
+  } */
 
   .titleBox {
     display: flex;
