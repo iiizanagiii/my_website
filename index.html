@@ -69,9 +69,9 @@
             </div>
           </div>
 
-          <div class="volumeSlider">
+          <!-- <div class="volumeSlider">
             <input type="range" min="0" max="100" value="1" id="myRange" class="slider">
-          </div>  
+          </div>   -->
       </div>
         
         <!--------------------- ABOUT ------------------------------>
@@ -123,11 +123,6 @@
             <p>OpenCV</p>
           </div>
 
-          <div class="skillItem ajax">
-            <img src="http://res.cloudinary.com/adamlancon/image/upload/v1506490579/ajaxJson8bit_deirpq.png" alt="AJAX">
-            <p>AJAX</p>
-          </div>
-
           <div class="skillItem tensorflow">
             <img src="./assets/images/skill_logo/Tensorflow_logo.png" alt="TensorFlow">
             <p>TensorFlow</p>
@@ -154,44 +149,51 @@
         
         <div class="projectPage">
           <div class="projectTab">
-
             <h1>My Projects</h1>
             <span class="closer">&times;</span>
 
             <div class="projectGrid">
 
-              <div class="projectItem first">
-                <a href="https://github.com/iiizanagiii/HSV_highlighter" target="_blank"><img src="/my_website/assets/images/me/me1.PNG"></a>
-                  <p>HSV highlighter</p>
+              <div class="projectItem first" data-md="/my_website/assets/md/HSV_highlighter.md">
+                <img src="/my_website/assets/images/me/me1.PNG">
+                <p>HSV highlighter</p>
               </div>
-
-              <div class="projectItem second">
-                <a href="https://github.com/iiizanagiii/Yolo_Annotator" target="_blank"><img src="/my_website/assets/images/me/me1.PNG"></a>
+              
+              <div class="projectItem second" data-md="https://raw.githubusercontent.com/iiizanagiii/Yolo_Annotator/refs/heads/main/README.md">
+                <img src="/my_website/assets/images/me/me1.PNG">
                 <p>Yolo Annotator</p>
               </div>
 
-              <div class="projectItem third">
-                <a href="https://github.com/iiizanagiii/Annotator" target="_blank"><img src="/my_website/assets/images/me/me1.PNG"></a>
+              <div class="projectItem third" data-md="/my_website/assets/md/Annotator.md">
+                <img src="/my_website/assets/images/me/me1.PNG">
                 <p>Annotator</p>
               </div>
 
-              <div class="projectItem fourth">
-                <a href="https://github.com/iiizanagiii/unet_segmentation" target="_blank"><img src="/my_website/assets/images/me/me1.PNG"></a>
+              <div class="projectItem fourth" data-md="/my_website/assets/md/unet_segmentation.md">
+                <img src="/my_website/assets/images/me/me1.PNG">
                 <p>Unet Segmentation</p>
               </div>
 
-              <div class="projectItem fifth">
-                <a href="https://github.com/iiizanagiii/Custom_logging" target="_blank"><img src="/my_website/assets/images/me/me1.PNG"></a>
+              <div class="projectItem fifth" data-md="/my_website/assets/md/Custom_logging.md">
+                <img src="/my_website/assets/images/me/me1.PNG">
                 <p>Custom Logging</p>
               </div>
 
-              <div class="projectItem sixth">
-                <a href="https://github.com/iiizanagiii/Email_SMS_Spam_Detection" target="_blank"><img src="/my_website/assets/images/me/me1.PNG"></a>
+              <div class="projectItem sixth" data-md="/my_website/assets/md/Email_SMS_Spam_Detection.md">
+                <img src="/my_website/assets/images/me/me1.PNG">
                 <p>Email SMS Spam Detection</p>
               </div>
+
             </div>
           </div>
+
+          <!-- Middle popup for markdown content -->
+          <div class="poke-box-project" id="projectMDPopup">
+            <span class="closeMD">&times;</span>
+            <div id="projectMDContent"></div>
+          </div>
         </div>
+
 
         <!--------------------- CONTACTS --------------------------->
 
