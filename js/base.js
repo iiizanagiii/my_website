@@ -2,11 +2,13 @@ $(document).ready(function() {
     $(".about").click(function() {
         $(".frontPage").fadeOut(500);
         $(".aboutPage").delay(500).slideDown(500);
+        loadMarkdown("/my_website/assets/md/about.md", "aboutMD");
     });
 
     $(".skills").click(function() {
         $(".frontPage").fadeOut(500);
         $(".skillPage").delay(500).fadeIn(700);
+        loadMarkdown("/my_website/assets/md/skills.md", "skillsMD");
     });
 
     $(".projects").click(function() {
@@ -17,6 +19,7 @@ $(document).ready(function() {
     $(".contact").click(function() {
         $(".frontPage").fadeOut(500);
         $(".contactPage").delay(500).fadeIn(700);
+        loadMarkdown("/my_website/assets/md/contacts.md", "contactMD");
     });
 
     $("#close").click(function() {
