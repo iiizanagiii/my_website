@@ -12,19 +12,19 @@
 
     --about-image-size: 150px;             
     --about-text-size: 6px;
-    --about-image-margin-left: 20px;
+    --about-image-margin-left: 2px;
     --about-image-margin-top: 5px;
     --translate-poke-about: translate(-55%, 5%);
     --about-poke-width: 90%;                
     --about-poke-padding: 12px 16px;
-    --poke-about-mtop: 60px;
+    --poke-about-mtop: 80px;
     --c-fontsize: 9px;
 
-    --skill-image-size: 60px;
-    --skill-font-size: 12px;
+    --skill-image-size: 50px;
+    --skill-font-size: 9px;
     --skill-padding: 5px;
-    --skill-image-pyto-w-size:170px;
-    --skill-image-pyto-h-size:100px;
+    --skill-image-pyto-w-size:110px;
+    --skill-image-pyto-h-size:70px;
 
     --overflow-projects: auto;
 

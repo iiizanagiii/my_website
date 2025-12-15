@@ -24,17 +24,18 @@
   position: relative;
 }
 
-.close {
-  position: fixed;
-  top: 15px;
-  right: 20px;
-  z-index: 9999;
-  font-family: "Press Start 2P";
-  font-size: 40px;
-  color: red;
-  animation: blink 1s steps(2, end) infinite;
-  cursor: pointer;
-}
+  .close {
+    position: absolute;
+    right: 5px;
+    font-family: "Press Start 2P";
+    font-size: 30px;
+    color: red;
+    animation: blink 1s steps(2, end) infinite;
+  }
+  .close:hover {
+    cursor: pointer;
+  }
+
 
 @keyframes blink {
   50% { opacity: 0; }
@@ -73,6 +74,9 @@
   z-index: 5;
 }
 
+.skillItem p{
+  font-size: var(--skill-font-size);
+}
 
 .skillItem img {
   width: var(--skill-image-size);
@@ -121,7 +125,7 @@
   right: 45%;
 }
 .skillItem.javascript img{
-  height: 100px;
+  height: var(--skill-image-js-h-siz);
 }
 
 /* ------------------- RESPONSIVE ------------------- */

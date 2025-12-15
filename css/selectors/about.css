@@ -102,4 +102,9 @@
   color: var(--close-color);
   animation: blink var(--blink-speed) steps(2, end) infinite;
   cursor: pointer;
+  
+}
+
+.markdown-content {
+  font-size: clamp(12px, 2vw, 18px);
 }

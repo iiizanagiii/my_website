@@ -55,7 +55,7 @@
   z-index: 1;
   font-family: "Press Start 2P";
   font-size: 30px;
-  color: red;
+  color: white;
   cursor: pointer;
 }
 
@@ -67,8 +67,8 @@
 
 .closeMD {
   position: absolute;
-  top: 25px;
-  right: 35px;
+  top: 5px;
+  right: 5px;
   font-size: 40px;
   color: red;
   animation: blink 1s steps(2, end) infinite;
@@ -108,6 +108,7 @@
   font-size: 5px;
   text-decoration: none;
   align-self: center;
+  color: white;
 }
 .projectItem a img {
   width: 55%;
@@ -116,17 +117,22 @@
 }
 
 .closer {
-  position: absolute;
+    position: absolute;
+    top: 5px;
     right: 5px;
     font-family: "Press Start 2P";
     font-size: 40px;
     color: red;
     animation: blink 1s steps(2, end) infinite;
-}
+  }
 .closer:hover {
-    cursor: pointer;
+  cursor: pointer;
   }
   
 @keyframes blink {
   50% { opacity: 0; }
+}
+
+.alignmentFix{
+  font-size: clamp(11px, 2vw, 8px);
 }
