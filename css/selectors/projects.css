@@ -83,7 +83,7 @@
 }
 
 .projectItem{
-  width: 110px;
+  width: 290px;
   height: 160px;
   border: solid white 6px;
   background-color: black;
@@ -114,10 +114,10 @@
 }
 
 .projectItem a {
-  width: 90%;
-  height: 90%;
+  width: 50%;
+  height: 50%;
   color: inherit;
-  font-size: 10px;
+  font-size: 5px;
   text-decoration: none;
   align-self: center;
 }
