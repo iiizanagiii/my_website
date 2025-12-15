@@ -1,5 +1,41 @@
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 250px) and (max-width: 551px) {
+  :root {
+    --title-width: 300px;
+    --title-height: 80px;
+    --font-size: 12px;
+    --selector-width: 70%;
+    --selector-font-size: 15px;
+    --margine-left-main: 90px;
+    --LA-h: 90px;
+    --LA-w: 90px;
+
+    --about-image-size: 150px;             
+    --about-text-size: 6px;
+    --about-image-margin-left: 20px;
+    --about-image-margin-top: 5px;
+    --translate-poke-about: translate(-55%, 5%);
+    --about-poke-width: 90%;                
+    --about-poke-padding: 12px 16px;
+    --poke-about-mtop: 60px;
+    --c-fontsize: 9px;
+
+    --skill-image-size: 60px;
+    --skill-font-size: 12px;
+    --skill-padding: 5px;
+    --skill-image-pyto-w-size:170px;
+    --skill-image-pyto-h-size:100px;
+
+    --overflow-projects: auto;
+
+    --contact-icon-size: 80px;
+    --contact-poke-padding: 8px 12px;
+    --contact-text-line-height: 180%;
+    --icon-margin-top:60px;
+  }
+}
+
+@media screen and (min-width: 551px) and (max-width: 600px) {
   :root {
     --title-width: 300px;
     --title-height: 80px;

@@ -4,6 +4,8 @@
   --about-poke-padding: 12px 18px;
   --poke-about-mtop: 20px;
 
+  --c-fontsize: 19px;
+
   --about-image-size: 200px;
   --about-image-margin-left: 70px;
   --about-image-margin-top: 170px;
@@ -28,7 +30,7 @@
 }
 
 .c-info {
-  font-size: 19px;
+  font-size: var(--c-fontsize);
   color: #ff2595;
 }
 
