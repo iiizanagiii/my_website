@@ -12,6 +12,7 @@ function loadMarkdownFromURL(url, elementId) {
 
 
 
+
 async function loadGitHubProjects(username) {
     const container = document.getElementById("projectList");
 

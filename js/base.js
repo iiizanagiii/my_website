@@ -43,8 +43,8 @@ $(document).ready(function() {
     });
 });
 
-// Important for most MD files to showup; (all except inside projects file)
-function loadMarkdown(path, elementId) {
+
+    function loadMarkdown(path, elementId) {
     fetch(path)
         .then(response => response.text())
         .then(md => {
