@@ -50,9 +50,8 @@
   border-radius: 4px;
   image-rendering: pixelated;
   position: relative;
-  overflow: hidden;                 /* prevents overflow glitches */
+  /* overflow: hidden; */
 }
-
 
 .aboutTab {
   display: flex;

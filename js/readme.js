@@ -11,12 +11,11 @@ function loadMarkdownFromURL(url, elementId) {
 }
 
 
-
-
 async function loadGitHubProjects(username) {
     const container = document.getElementById("projectList");
 
     try {
+        // ONLY WORKS IF THE PROJECTS ARE PUBLIC
         const response = await fetch(`https://api.github.com/users/${username}/repos`);
         const repos = await response.json();
 

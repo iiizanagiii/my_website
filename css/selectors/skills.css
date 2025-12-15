@@ -1,6 +1,9 @@
 :root {
     --skill-image-size: 60px;
     --skill-font-size: 10px;
+
+    --skill-image-pyto-w-size:170px;
+    --skill-image-pyto-h-size:150px;
   }
 
 .skillPage {
@@ -70,9 +73,9 @@
   z-index: 5;
 }
 
+
 .skillItem img {
   width: var(--skill-image-size);
-  height: var(--skill-image-size);
   image-rendering: pixelated;
 }
 
@@ -80,12 +83,20 @@
   top: 5%;
   left: 5%;
 }
+.skillItem.pytorch img{
+  width: var(--skill-image-pyth-w-size);
+  height: var(--skill-image-pyth-h-size);
+}
 
 .skillItem.pytorch {
   top: 5%;
   left: 50%;
   transform: translateX(-50%);
   height: 100px;
+}
+.skillItem.pytorch img{
+  width: var(--skill-image-pyto-w-size);
+  height: var(--skill-image-pyto-h-size);
 }
 
 .skillItem.tensorflow {
@@ -108,6 +119,9 @@
 .skillItem.javascript {
   bottom: 5%;
   right: 45%;
+}
+.skillItem.javascript img{
+  height: 100px;
 }
 
 /* ------------------- RESPONSIVE ------------------- */

@@ -1,4 +1,3 @@
-
 @media screen and (max-width: 600px) {
   :root {
     --title-width: 300px;
@@ -7,6 +6,8 @@
     --selector-width: 50%;
     --selector-font-size: 20px;
     --margine-left-main: 90px;
+    --LA-h: 90px;
+    --LA-w: 90px;
 
     --about-image-size: 150px;             
     --about-text-size: 12px;
@@ -20,6 +21,10 @@
     --skill-image-size: 60px;
     --skill-font-size: 12px;
     --skill-padding: 5px;
+    --skill-image-pyto-w-size:170px;
+    --skill-image-pyto-h-size:100px;
+
+    --overflow-projects: auto;
 
     --contact-icon-size: 80px;
     --contact-poke-padding: 8px 12px;
@@ -50,6 +55,12 @@
     --skill-image-size: 80px;
     --skill-font-size: 13px;
     --skill-padding: 8px;
+
+
+
+    --item-width-PI: 200px;
+    --item-Height-PI: 150px;
+    --projectitem-font: 7px;
 
     --contact-icon-size: 100px;
     --contact-poke-padding: 10px 15px;

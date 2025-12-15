@@ -1,21 +1,14 @@
 $(document).ready(function() {
-
     $(".about").click(function() {
         $(".frontPage").fadeOut(500);
         $(".aboutPage").delay(500).slideDown(500);
-        loadMarkdown(
-            "https://raw.githubusercontent.com/iiizanagiii/my_website/master/assets/md/about.md",
-            "aboutMD"
-        );
+        loadMarkdown("/my_website/assets/md/about.md", "aboutMD");
     });
 
     $(".skills").click(function() {
         $(".frontPage").fadeOut(500);
         $(".skillPage").delay(500).fadeIn(700);
-        loadMarkdown(
-            "https://raw.githubusercontent.com/iiizanagiii/my_website/master/assets/md/skills.md",
-            "skillsMD"
-        );
+        loadMarkdown("/my_website/assets/md/skills.md", "skillsMD");
     });
 
     $(".projects").click(function() {
@@ -26,10 +19,7 @@ $(document).ready(function() {
     $(".contact").click(function() {
         $(".frontPage").fadeOut(500);
         $(".contactPage").delay(500).fadeIn(700);
-        loadMarkdown(
-            "https://raw.githubusercontent.com/iiizanagiii/my_website/master/assets/md/contacts.md",
-            "contactMD"
-        );
+        loadMarkdown("/my_website/assets/md/contacts.md", "contactMD");
     });
 
     $("#close").click(function() {
@@ -53,9 +43,8 @@ $(document).ready(function() {
     });
 });
 
-
-
-    function loadMarkdown(path, elementId) {
+// Loads all of the MD aside from projects.
+function loadMarkdown(path, elementId) {
     fetch(path, { cache: "no-store" }) // force fresh GitHub fetch
         .then(response => {
             if (!response.ok) {
