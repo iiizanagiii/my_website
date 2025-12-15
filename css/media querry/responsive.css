@@ -1,0 +1,91 @@
+
+@media screen and (max-width: 600px) {
+  :root {
+    --title-width: 300px;
+    --title-height: 80px;
+    --font-size: 12px;
+    --selector-width: 50%;
+    --selector-font-size: 20px;
+    --margine-left-main: 90px;
+
+    --about-image-size: 150px;             
+    --about-text-size: 12px;
+    --about-image-margin-left: 20px;
+    --about-image-margin-top: 10px;
+    --translate-poke-about: translate(-50%, 5%);
+    --about-poke-width: 90%;                
+    --about-poke-padding: 12px 16px;
+    --poke-about-mtop: 60px;
+
+    --skill-image-size: 60px;
+    --skill-font-size: 12px;
+    --skill-padding: 5px;
+
+    --contact-icon-size: 80px;
+    --contact-poke-padding: 8px 12px;
+    --contact-text-line-height: 180%;
+    --icon-margin-top:60px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  :root {
+    
+    --title-width: 450px;
+    --title-height: 150px;
+    --font-size: 18px;
+    --selector-width: 35%;
+    --selector-font-size: 20px;
+    --margine-left-main: 50px;
+
+    --about-image-size: 150px;             
+    --about-text-size: 12px;
+    --about-image-margin-left: 20px;
+    --about-image-margin-top: 20px;
+    --translate-poke-about: translate(-50%, 5%);
+    --about-poke-width: 90%;                
+    --about-poke-padding: 12px 16px;
+    --poke-about-mtop: 60px;
+
+    --skill-image-size: 80px;
+    --skill-font-size: 13px;
+    --skill-padding: 8px;
+
+    --contact-icon-size: 100px;
+    --contact-poke-padding: 10px 15px;
+    --contact-text-line-height: 220%;
+    --icon-margin-top:80px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  :root {
+    --title-width: 600px;
+    --title-height: 200px;
+    --font-size: 24px;
+    --selector-width: 27%;
+    --selector-font-size: 20px;
+    --margine-left-main: 80px;
+
+    --about-image-size: 200px;
+    --about-text-size: 10px;
+    --about-image-margin-left: 70px;
+    --about-image-margin-top: 170px;
+    --translate-poke-about: translate(-50%, 20%);
+    --about-poke-width: fit-content;
+    --about-poke-padding: 12px 18px;
+    --poke-about-mtop: 100px;
+
+    --skill-image-size: 100px;
+    --skill-font-size: 14px;
+    --skill-padding: 10px;
+
+
+
+    --contact-icon-size: 120px;
+    --contact-poke-padding: 12px 18px;
+    --contact-text-line-height: 250%;
+    --icon-margin-top:100px;
+  }
+}
+

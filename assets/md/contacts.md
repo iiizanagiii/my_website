@@ -1,0 +1,1 @@
+If you are a potential client or employer then please feel free to contact me any time! Just make sure to include your name, your companies name, and what you're interested in. <br><br>Thank you!!</p>

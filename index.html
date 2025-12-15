@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Sanket Tamang</title>
+      <link rel="stylesheet" href="/my_website/css/base.css">
+      <link rel="stylesheet" href="/my_website/css/frontpage/front.css">
+      <link rel="stylesheet" href="/my_website/css/selectors/about.css">
+      <link rel="stylesheet" href="/my_website/css/selectors/contact.css">
+      <link rel="stylesheet" href="/my_website/css/selectors/projects.css">
+      <link rel="stylesheet" href="/my_website/css/selectors/skills.css">
+      <link rel="stylesheet" href="/my_website/css/media querry/responsive.css">
+
+      <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="HandheldFriendly" content="true">
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+      
+      <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="/my_website/js/readme.js"></script>
+      <script src="/my_website/js/base.js"></script>
+  </head>
+
+  <body>
+    <!--------------------- Background Video + Extra --------------------->
+
+        <video autoplay loop muted playsinline id="bg-video">
+          <source src="/my_website/assets/images/background/background.mp4" type="video/mp4">
+        </video>
+
+        <audio autoplay loop>
+          <source src="/my_website/assets/BGM/AOT_BGM.mp3" type="audio/mp3">
+          <!-- Source: https://www.youtube.com/watch?v=z7OFS1tGWp0 -->
+        </audio>
+
+    <!--------------------- FrontPage ------------------------------>
+
+      <div class="frontPage">
+
+          <!--------------------- Title Box (Name and Description) ------------------------------>
+          <div class="titleBox">
+
+            <!-- <img src="http://res.cloudinary.com/adamlancon/image/upload/v1506383159/megamanfullname_toxqvk.png" /> -->
+
+            <img id="rex" src = "/my_website/assets/images/Sanket_Tamang.png" />
+            <p>COMPUTER VISION ENGINEER</p>
+
+          </div>
+        
+          <!--------------------- SELECTORS --------------------------->   
+          
+          <div class="selectors">
+            <div class="selector about">
+              <p><i class="fa fa-caret-right" aria-hidden="true"></i>About</p>
+            </div>
+            <div class="selector skills">
+              <p><i class="fa fa-caret-right" aria-hidden="true"></i>Skills</p>
+            </div>
+            <div class="selector projects">
+              <p><i class="fa fa-caret-right" aria-hidden="true"></i>Projects</p>
+            </div>
+            <div class="selector contact">
+              <p><i class="fa fa-caret-right" aria-hidden="true"></i>Contact</p>
+            </div>
+          </div>
+
+          <!-- <div class="volumeSlider">
+            <input type="range" min="0" max="100" value="1" id="myRange" class="slider">
+          </div>   -->
+      </div>
+        
+        <!--------------------- ABOUT ------------------------------>
+        
+        <div class="aboutPage">
+          <div class="aboutTab">
+            <span id="close">&times</span>
+            <div class="aboutImages">
+              <!-- <img src="http://res.cloudinary.com/adamlancon/image/upload/v1505344317/untitled_uevddf.svg" /> -->
+              <img id="adam1" src="./assets/images/me/me1.PNG" height="500px" width="500px"/>
+              <img id="adam2" src="./assets/images/me/me2.PNG" height="500px" width="500px" /> 
+              </div>
+            <!-- <img src="./pixel1.JPG" /> -->
+            <!-- <img id="adam2" src="http://res.cloudinary.com/adamlancon/image/upload/v1506463808/untitled_11_zprmmk.svg" /> -->
+            <div class="poke-box-about">
+                  <!-- link to the about.md -->
+                  <div id="aboutMD">
+                  </div>
+              <!-- <u> **TL-DR: I love coding, I'm good at most things, Hire me plz :) **</u> -->
+            
+            </div>
+          </div>
+        </div>
+        
+        <!--------------------- SKILLS ----------------------------->
+
+        <div class="skillPage">
+
+          <!-- Close Button -->
+          <span class="close">&times;</span>
+
+          <!-- POKÉ BOX ONLY -->
+          <div class="poke-box-skill">
+            <div class="skillWords">
+              <div id="skillsMD">
+              </div>
+            </div>
+          </div>
+
+          <!-- ICONS OUTSIDE THE BOX -->
+
+          <div class="skillItem python">
+            <img src="./assets/images/skill_logo/python_logo.png" alt="Python">
+            <p>Python</p>
+          </div>
+
+          <div class="skillItem opencv">
+            <img src="./assets/images/skill_logo/OpenCV_logo.png" alt="OpenCV">
+            <p>OpenCV</p>
+          </div>
+
+          <div class="skillItem tensorflow">
+            <img src="./assets/images/skill_logo/Tensorflow_logo.png" alt="TensorFlow">
+            <p>TensorFlow</p>
+          </div>
+
+          <div class="skillItem react">
+            <img src="http://res.cloudinary.com/adamlancon/image/upload/v1506492098/react_8bit_sx7wq3.png" alt="React">
+            <p>React</p>
+          </div>
+
+          <div class="skillItem javascript">
+            <img src="http://res.cloudinary.com/adamlancon/image/upload/v1506487779/html%205.png" alt="JavaScript">
+            <p>JavaScript</p>
+          </div>
+
+          <div class="skillItem pytorch">
+            <img src="./assets/images/skill_logo/pytorch_logo.png" alt="PyTorch">
+            <p>PyTorch</p>
+          </div>
+
+        </div>
+
+        <!--------------------- PROJECTS --------------------------->
+        
+        <div class="projectPage">
+          <div class="projectTab">
+              <h1>My Projects</h1>
+              <span class="closer">&times;</span>
+
+              <div id="projectList" class="projectGrid"></div>
+          </div>
+
+          <!-- MARKDOWN POPUP -->
+          <div class="poke-box-project" id="projectMDPopup">
+              <span class="closeMD">&times;</span>
+              <div id="projectMDContent"></div>
+          </div>
+        </div>
+
+
+
+        <!--------------------- CONTACTS --------------------------->
+
+        <div class="contactPage">
+          <div class="contactTab">
+            <span class="closing">&times</span>
+              <div class="icon-row">
+                <div class="linkedin contact-icon">
+                  <a href="https://www.linkedin.com/in/sanket-tamang-a25b52202" target="blank"><img src="/my_website/assets/images/socials/linkedin.png"></a>
+                  <!-- Original image link: http://res.cloudinary.com/adamlancon/image/upload/v1506658863/linkedin_8bit_tx8ylz.png -->
+                </div>
+                <div class="github contact-icon">
+                  <a href="https://github.com/iiizanagiii" target="blank"> <img src="/my_website/assets/images/socials/github.png">
+                  <!-- Original image link: http://res.cloudinary.com/adamlancon/image/upload/v1506577056/github_8bit_yelotd.png -->
+                  </a>
+                </div>
+                
+                <!-- <div class="twitter contact-icon">
+                  <a href="https://github.com/iiizanagiii" target="blank"> <img src="/my_website/assets/images/socials/twitter.png">
+                  Made by Swajan Rajbanshi
+                  </a>
+                </div>
+                <div class="facebook contact-icon">
+                  <a href="https://github.com/iiizanagiii" target="blank"> <img src="/my_website/assets/images/socials/facebook.png">
+                  Made by Swajan Rajbanshi
+                  </a>
+                </div>
+              </div> -->
+              
+                <div class="resume contact-icon">
+                  <a href="/my_website/assets/pdf/CV.pdf" download="CV.pdf">
+                  <img src="/my_website/assets/images/socials/resumePDF.png"></a> CV
+                  <!-- Original image: http://res.cloudinary.com/adamlancon/image/upload/v1506665738/pdfclick_8bit_moptcq.png --> 
+                </div>
+            
+                    <div class="poke-box">
+                      <div class="words">
+                          <div id="contactMD">
+                          </div>
+                      </div>
+                    </div>   
+
+              </div>
+          </div>
+        </div>
+
+      <!----------------------- JAVA SCRIPT ------------------------------>
+
+      <script language="JavaScript" type="text/javascript" src="base.js"></script>
+
+  </body>
+</html>
+
+
+

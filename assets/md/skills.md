@@ -1,0 +1,1 @@
+I'm no pro, but I know these languages exceptionally well except for PyTorch & TensorFlow, which I am currently learning. My creativity is what puts me a cut above everyone else at my skill level, as well as how quickly I can learn new skills on the go!
