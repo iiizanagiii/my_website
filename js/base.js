@@ -62,3 +62,12 @@ function loadMarkdown(path, elementId) {
         });
 }
 
+$(document).ready(function() {
+    $(".selectors .selector").click(function() {
+        $(".littleAdam, .building").fadeOut(300);
+    });
+
+    $(".closer, #close, .close, .closing").click(function() {
+        $(".littleAdam, .building").fadeIn(2000); 
+    });
+});
