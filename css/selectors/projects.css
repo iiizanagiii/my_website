@@ -1,6 +1,6 @@
 :root{
   --item-width-PI: 290px;
-  --item-Height-PI: 160px;
+  --item-Height-PI: 140px;
   --overflow-projects: hidden;
   --projectitem-font: 10px;
 }
@@ -17,11 +17,12 @@
   font-family: "Press Start 2P";
   position: relative;
   overflow-y: var(--overflow-projects);   
+  max-height: 100vh;
 }
 
 
 .projectTab {
-  min-height: 100vh;
+  min-height: 70vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -29,6 +30,7 @@
   padding-top: 60px;
   gap: 30px;
   position: relative;
+  padding-bottom: 60px;
 }
 
 .projectTab h1 {
