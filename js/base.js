@@ -43,12 +43,31 @@ $(document).ready(function() {
     });
 });
 
-
-    function loadMarkdown(path, elementId) {
-    fetch(path)
-        .then(response => response.text())
+// Loads all of the MD aside from projects.
+function loadMarkdown(path, elementId) {
+    fetch(path, { cache: "no-store" }) // force fresh GitHub fetch
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}`);
+            }
+            return response.text();
+        })
         .then(md => {
             document.getElementById(elementId).innerHTML = marked.parse(md);
         })
-        .catch(err => console.error("Error loading MD:", err));
-    }
+        .catch(err => {
+            document.getElementById(elementId).innerHTML =
+                "<p>Failed to load markdown.</p>";
+            console.error("Error loading MD:", err);
+        });
+}
+
+$(document).ready(function() {
+    $(".selectors .selector").click(function() {
+        $(".littleAdam, .building").fadeOut(300);
+    });
+
+    $(".closer, #close, .close, .closing").click(function() {
+        $(".littleAdam, .building").fadeIn(2000); 
+    });
+});

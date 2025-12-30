@@ -25,17 +25,14 @@
   @keyframes blink-caret { 
     50% { border-color: transparent; } 
   }
-  
   @keyframes typing2 {
     from {width: 0 }
     to { width: 100% }
   }
-  
   @keyframes blink {
     from {color: red}
     to {color: transparent}
   }
-  
   @keyframes wind {
     from {opacity: 1}
     to {opacity: 0}
@@ -69,12 +66,10 @@
     width: 100%;
     grid-area: 3/3/6/5;
   } */
-  
   /* img { 
     height: 150%;
     width: 100%;
-  } */
-  
+  } */ 
   /* .building {
     height: 100%;
     width: 100%;

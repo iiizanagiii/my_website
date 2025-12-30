@@ -1,3 +1,10 @@
+:root{
+  --item-width-PI: 290px;
+  --item-Height-PI: 140px;
+  --overflow-projects: hidden;
+  --projectitem-font: 10px;
+}
+
 /* ------------------------------------------------------------ PROJECTS (FLEX VERSION) ------------------------------------------------------------ */
 .projectPage {
   display: none;
@@ -5,15 +12,17 @@
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100%;
+  max-height: 100vh;  
   width: 100%;
   font-family: "Press Start 2P";
   position: relative;
-  overflow: hidden;
+  overflow-y: var(--overflow-projects);   
+  max-height: 100vh;
 }
 
+
 .projectTab {
-  height: 100%;
+  min-height: 70vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -21,6 +30,7 @@
   padding-top: 60px;
   gap: 30px;
   position: relative;
+  padding-bottom: 60px;
 }
 
 .projectTab h1 {
@@ -47,11 +57,9 @@
   z-index: 1;
   font-family: "Press Start 2P";
   font-size: 30px;
-  color: red;
+  color: white;
   cursor: pointer;
 }
-
-
 
 /* Make links inside markdown white */
 #projectMDContent a {
@@ -59,19 +67,14 @@
   text-decoration: underline;
 }
 
-
-.closer {
+.closeMD {
   position: absolute;
-  top: 20px;
-  right: 30px;
+  top: 5px;
+  right: 5px;
   font-size: 40px;
   color: red;
   animation: blink 1s steps(2, end) infinite;
   cursor: pointer;
-}
-
-@keyframes blink {
-  50% { opacity: 0; }
 }
 
 .projectGrid {
@@ -81,13 +84,12 @@
   justify-content: center;
   gap: 25px 40px;
 }
-
 .projectItem{
-  width: 290px;
-  height: 160px;
+  width: var(--item-width-PI);
+  height: var(--item-Height-PI);
   border: solid white 6px;
   background-color: black;
-  font-size: 10px;
+  font-size: var(--projectitem-font);
   color: white;
   text-align: center;
   display: flex;
@@ -95,24 +97,12 @@
   justify-content: center;
   transition: 0.2s ease;
 }
-
-.closeMD {
-  position: absolute;
-  top: 25px;
-  right: 35px;
-  font-size: 40px;
-  color: red;
-  animation: blink 1s steps(2, end) infinite;
-  cursor: pointer;
-}
-
 .projectItem:hover {
   border: solid black 4px;
   background-color: white;
   color: black;
   cursor: pointer;
 }
-
 .projectItem a {
   width: 50%;
   height: 50%;
@@ -120,10 +110,31 @@
   font-size: 5px;
   text-decoration: none;
   align-self: center;
+  color: white;
 }
-
 .projectItem a img {
   width: 55%;
   height: 55%;
   border: ridge blue 4px;
+}
+
+.closer {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-family: "Press Start 2P";
+    font-size: 40px;
+    color: red;
+    animation: blink 1s steps(2, end) infinite;
+  }
+.closer:hover {
+  cursor: pointer;
+  }
+  
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+.alignmentFix{
+  font-size: clamp(11px, 2vw, 8px);
 }

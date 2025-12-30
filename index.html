@@ -34,8 +34,8 @@
         </video>
 
         <audio autoplay loop>
-          <source src="/my_website/assets/BGM/AOT_BGM.mp3" type="audio/mp3">
-          <!-- Source: https://www.youtube.com/watch?v=z7OFS1tGWp0 -->
+          <source src="/my_website/assets/BGM/BGM.mp3" type="audio/mp3">
+          <!-- Source: https://www.youtube.com/watch?v=kFsCTDtJb-g -->
         </audio>
 
     <!--------------------- FrontPage ------------------------------>
@@ -74,6 +74,17 @@
           </div>   -->
       </div>
         
+      <div class="littleAdam">
+          <!-- <img id="littleAdam" src="http://res.cloudinary.com/adamlancon/image/upload/v1506365854/untitled_6_ubbrnf.svg" />
+          <img id="littleAdam2" src="http://res.cloudinary.com/adamlancon/image/upload/v1506368157/untitled_7_um0bkp.svg" /> -->
+          <img id="littleAdam" src="./assets/images/me/p1.png" />
+          <img id="littleAdam2" src="./assets/images/me/p2.png" />
+      </div>
+
+        <div class="building">
+          <img id="building" src="/my_website/assets/images/me/building.svg" />
+        </div>
+
         <!--------------------- ABOUT ------------------------------>
         
         <div class="aboutPage">
@@ -88,10 +99,8 @@
             <!-- <img id="adam2" src="http://res.cloudinary.com/adamlancon/image/upload/v1506463808/untitled_11_zprmmk.svg" /> -->
             <div class="poke-box-about">
                   <!-- link to the about.md -->
-                  <div id="aboutMD">
-                  </div>
-              <!-- <u> **TL-DR: I love coding, I'm good at most things, Hire me plz :) **</u> -->
-            
+                  <div id="aboutMD" class="markdown-content">
+                  </div>      
             </div>
           </div>
         </div>
@@ -158,17 +167,18 @@
           <!-- MARKDOWN POPUP -->
           <div class="poke-box-project" id="projectMDPopup">
               <span class="closeMD">&times;</span>
-              <div id="projectMDContent"></div>
+              <div id="projectMDContent" class="alignmentFix"></div>
           </div>
         </div>
-
-
 
         <!--------------------- CONTACTS --------------------------->
 
         <div class="contactPage">
+          
           <div class="contactTab">
+
             <span class="closing">&times</span>
+
               <div class="icon-row">
                 <div class="linkedin contact-icon">
                   <a href="https://www.linkedin.com/in/sanket-tamang-a25b52202" target="blank"><img src="/my_website/assets/images/socials/linkedin.png"></a>
@@ -194,7 +204,7 @@
               
                 <div class="resume contact-icon">
                   <a href="/my_website/assets/pdf/CV.pdf" download="CV.pdf">
-                  <img src="/my_website/assets/images/socials/resumePDF.png"></a> CV
+                  <img src="/my_website/assets/images/socials/resumePDF.png"></a> <p style="color: #ff2595;"> CV</p>
                   <!-- Original image: http://res.cloudinary.com/adamlancon/image/upload/v1506665738/pdfclick_8bit_moptcq.png --> 
                 </div>
             
@@ -206,7 +216,9 @@
                     </div>   
 
               </div>
+          
           </div>
+
         </div>
 
       <!----------------------- JAVA SCRIPT ------------------------------>
